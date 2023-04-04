@@ -190,3 +190,78 @@ const droid = "droewewid";
 const len = droid.length;
 console.log(len);
 console.log(droid[3]);
+
+function getSubstring(string, length) {
+  const substring = string.slice(string, length); // Change this line
+
+  return substring;
+}
+console.log(getSubstring("Hello", 2));
+
+function checkForSpam(message) {
+  let result;
+  // Change code below this line
+    let m = message.toUpperCase();
+    console.log(m)
+  // Change code above this line
+  result = m.includes("spam");
+  return result;
+}
+console.log(checkForSpam("Get best spam sale offers now!"));
+console.log(checkForSpam("Trust me, this is not a spam message"));
+
+function checkForSpam(message) {
+  let result;
+  // Change code below this line
+let m = message.toLowerCase();
+  // Change code above this line
+  if(result = m.includes("sale")){
+  true;
+  }else if(result = m.includes("spam")){
+  true;
+  }else{
+  false;
+  }
+  
+  return result;
+}
+
+console.log(checkForSpam('Get best sale offers now!'));
+
+function oldAge(age) {
+    if (age > 18) {
+        return "You are an adult";
+    }
+    return "You are a minor";
+}
+console.log(oldAge(30));
+
+const fruits = ["a", "b", "c"]
+const a1 = fruits[0];
+const b1 = fruits[1];
+console.log(a1, b1);
+const fruitsLength = fruits.length;
+console.log(fruitsLength);
+
+const fruitsArray = ["apple", "peach", "pear", "banana"];
+
+// Change code below this line
+const lastElementIndex = fruitsArray.length -1;
+const lastElement = fruitsArray[fruitsArray.length-1];
+console.log(lastElementIndex);
+console.log(lastElement);
+//---------------------------------------//-------------------------//
+function getExtremeElements(array) {
+  // Change code below this line
+//   const a = array.length[0];
+    let aArray = [];
+    let bArray = [];
+    aArray = array[array.length - 1];
+    bArray = array[0];
+    return [aArray, bArray];
+  
+ 
+
+  // Change code above this line
+}
+console.log(getExtremeElements(["f", "g", "h", "u", "y"]));
