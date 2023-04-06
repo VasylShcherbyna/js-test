@@ -265,3 +265,61 @@ function getExtremeElements(array) {
   // Change code above this line
 }
 console.log(getExtremeElements(["f", "g", "h", "u", "y"]));
+
+function delimitor(data, delim) {
+    let result = data.split(delim);
+    return result;
+}
+console.log(delimitor("terminal", ""));
+
+function calculateEngravingPrice(message, pricePerWord) {
+   // Change code below this line
+
+    let mes = message.split(" ").length;
+    console.log(mes);
+ return mes * pricePerWord;
+   // Change code above this line
+}
+console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
+
+function slugify(title) {
+  // Change code below this line
+return  title.split(" ").join("-").toLowerCase();
+
+//
+  // Change code above this line
+}
+console.log(slugify("Arrays for begginers"));
+
+const alfabet = ["a", "b", "c", "d", "f"];
+const result_1 = alfabet.slice(1, -1);
+console.log(result_1); 
+
+
+function calculateTotal(number) {
+ // Change code below this line
+  let str;
+for(i=0; i<=number; i++){
+return str+=i;
+}
+ 
+
+
+  // Change code above this line
+}
+console.log(calculateTotal(5));
+
+function calculateTotal(number) {
+ // Change code below this line
+  let sum = 0;
+for(i=0; i <= number; i++){
+ sum = sum + i;
+}
+  
+return sum;
+
+  // Change code above this line
+}
+
+console.log(calculateTotal(4));
+
