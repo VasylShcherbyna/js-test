@@ -31,10 +31,10 @@ finish = secondTest(9, 1);
 console.log(finish);
 
 function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
-  // Change code below this line 
+  //-----------//---------// 
 const message = `You ordered droids worth ${orderedQuantity * pricePerDroid + deliveryFee} credits. Delivery (${deliveryFee} credits) is included in total price`;
 
-  // Change code above this line
+  //-----------//---------//
   return message;
 }
 const m = makeOrderMessage(2, 100, 50);
@@ -108,7 +108,7 @@ function getDiscount(totalSpent) {
   const SILVER_DISCOUNT = 0.05;
   const GOLD_DISCOUNT = 0.1;
   let discount;
-  // Change code below this line
+  //-----------//---------//
   if(totalSpent >= 50000){
   return GOLD_DISCOUNT;
   }else if(totalSpent >= 20000 && totalSpent < 50000){
@@ -119,7 +119,7 @@ function getDiscount(totalSpent) {
   return BASE_DISCOUNT;
   }
 
-  // Change code above this line
+  //-----------//---------//
   return discount;
 }
 
@@ -133,7 +133,7 @@ console.log(resultTern);
 function checkPassword(password) {
   const ADMIN_PASSWORD = "jqueryismyjam";
   let message;
-  // Change code below this line
+  //-----------//---------//
 switch(password){
   case null:
   message = "Canceled by user!";
@@ -153,7 +153,7 @@ console.log(checkPassword(1213));
 
 function getShippingCost(country) {
     let message;
-  // Change code below this line
+  //-----------//---------//
   let price;
 switch(country){
   case "China" :
@@ -178,7 +178,7 @@ switch(country){
   default:
     message = "Sorry, there is no delivery to your country";
 }
-  // Change code above this line
+  //-----------//---------//
     return message;
     
 }
@@ -200,10 +200,10 @@ console.log(getSubstring("Hello", 2));
 
 function checkForSpam(message) {
   let result;
-  // Change code below this line
+  //-----------//---------//
     let m = message.toUpperCase();
     console.log(m)
-  // Change code above this line
+  //-----------//---------//
   result = m.includes("spam");
   return result;
 }
@@ -212,9 +212,9 @@ console.log(checkForSpam("Trust me, this is not a spam message"));
 
 function checkForSpam(message) {
   let result;
-  // Change code below this line
+  //-----------//---------//
 let m = message.toLowerCase();
-  // Change code above this line
+  //-----------//---------//
   if(result = m.includes("sale")){
   true;
   }else if(result = m.includes("spam")){
@@ -245,14 +245,14 @@ console.log(fruitsLength);
 
 const fruitsArray = ["apple", "peach", "pear", "banana"];
 
-// Change code below this line
+//-----------//---------//
 const lastElementIndex = fruitsArray.length -1;
 const lastElement = fruitsArray[fruitsArray.length-1];
 console.log(lastElementIndex);
 console.log(lastElement);
 //---------------------------------------//-------------------------//
 function getExtremeElements(array) {
-  // Change code below this line
+  //-----------//---------//
 //   const a = array.length[0];
     let aArray = [];
     let bArray = [];
@@ -262,7 +262,7 @@ function getExtremeElements(array) {
   
  
 
-  // Change code above this line
+  //-----------//---------//
 }
 console.log(getExtremeElements(["f", "g", "h", "u", "y"]));
 
@@ -273,21 +273,21 @@ function delimitor(data, delim) {
 console.log(delimitor("terminal", ""));
 
 function calculateEngravingPrice(message, pricePerWord) {
-   // Change code below this line
+   //-----------//---------//
 
     let mes = message.split(" ").length;
     console.log(mes);
  return mes * pricePerWord;
-   // Change code above this line
+   //-----------//---------//
 }
 console.log(calculateEngravingPrice("JavaScript is in my blood", 10));
 
 function slugify(title) {
-  // Change code below this line
+  //-----------//---------//
 return  title.split(" ").join("-").toLowerCase();
 
 //
-  // Change code above this line
+  //-----------//---------//
 }
 console.log(slugify("Arrays for begginers"));
 
@@ -297,7 +297,7 @@ console.log(result_1);
 
 
 function calculateTotal(number) {
- // Change code below this line
+ //-----------//---------//
   let str;
 for(i=0; i<=number; i++){
 return str+=i;
@@ -305,12 +305,12 @@ return str+=i;
  
 
 
-  // Change code above this line
+  //-----------//---------//
 }
 console.log(calculateTotal(5));
 
 function calculateTotal(number) {
- // Change code below this line
+ //-----------//---------//
   let sum = 0;
 for(i=0; i <= number; i++){
  sum = sum + i;
@@ -318,14 +318,14 @@ for(i=0; i <= number; i++){
   
 return sum;
 
-  // Change code above this line
+  //-----------//---------//
 }
 
 console.log(calculateTotal(4));
 
 
 function findLongestWord(string) {
-  // Change code below this line
+  //-----------//---------//
    string = 'Google do a roll';
 let arr = string.split(' ');
  
@@ -339,7 +339,7 @@ let arr = string.split(' ');
   }
 
  return longestWord;
-  // Change code above this line
+  //-----------//---------//
 }
 
 console.log(findLongestWord());
@@ -347,18 +347,18 @@ console.log(findLongestWord());
 
 function createArrayOfNumbers(min, max) {
   const numbers = [];
-  // Change code below this line
+  //-----------//---------//
 for(let i = min; i <= max; i++){
 numbers.push(i);
 }
-  // Change code above this line
+  //-----------//---------//
   return numbers;
 }
 
 console.log(createArrayOfNumbers(1, 5));
 
 function filterArray(numbers, value) {
-   // Change code below this line
+   //-----------//---------//
   let max = [];
   for (let i = 0; i < numbers.length; i++){
   if(numbers[i]>value){
@@ -367,14 +367,14 @@ function filterArray(numbers, value) {
 }
 
 return max;
-  // Change code above this line
+  //-----------//---------//
 }
 
 console.log(filterArray([1, 2, 3, 4, 5], 3));
 
 
 function getCommonElements(array1, array2) {
-  // Change code below this line
+  //-----------//---------//
   let same = [];
   for (let i = 0; i <= array1.length; i++){
     console.log(array1[i]);
@@ -384,14 +384,14 @@ same.push(array1[i])
 }
 return same;
 
- // Change code above this line
+ //-----------//---------//
 }
 
 console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
 
 
 function calculate(number) {
- // Change code below this line
+ //-----------//---------//
   let sum = 0;
 for(let numbers of number){
  sum = sum + numbers;
@@ -399,13 +399,13 @@ for(let numbers of number){
   
 return sum;
 
-  // Change code above this line
+  //-----------//---------//
 }
 
 console.log(calculate([4, 3, 5]));
 
 function getEvenNumbers(start, end) {
-   // Change code below this line
+   //-----------//---------//
   let numbers = [];
   for(let i = start; i<=end; i++){
   if(i % 2 === 0){
@@ -414,13 +414,13 @@ function getEvenNumbers(start, end) {
   }
 return numbers;
 
-    // Change code above this line
+    //-----------//---------//
 }
 console.log(getEvenNumbers(3, 11));
 
 
 function includes(array, value) {
-  // Change code below this line
+  //-----------//---------//
   let number;
 for(let i = 0; i<array.length; i++){
   if(array[i] === value){
@@ -431,7 +431,7 @@ for(let i = 0; i<array.length; i++){
   }
 }
   return number;
-  // Change code above this line
+  //-----------//---------//
 }
 console.log(includes([1, 2, 3, 4, 5], 3));
 console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
@@ -453,7 +453,7 @@ const totalData = {
      
 }
 
-// Change code below this line
+//-----------//---------//
 const arrayData = "name";
 apartment.area = 60;
 apartment.rooms = 3;
