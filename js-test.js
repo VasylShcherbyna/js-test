@@ -323,3 +323,146 @@ return sum;
 
 console.log(calculateTotal(4));
 
+
+function findLongestWord(string) {
+  // Change code below this line
+   string = 'Google do a roll';
+let arr = string.split(' ');
+ 
+  let longestWord = [0];
+  for(let i = 0; i < arr.length; i+=1){
+     
+    if(arr[i].length > longestWord.length){
+      longestWord = arr[i];
+    }
+    
+  }
+
+ return longestWord;
+  // Change code above this line
+}
+
+console.log(findLongestWord());
+
+
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  // Change code below this line
+for(let i = min; i <= max; i++){
+numbers.push(i);
+}
+  // Change code above this line
+  return numbers;
+}
+
+console.log(createArrayOfNumbers(1, 5));
+
+function filterArray(numbers, value) {
+   // Change code below this line
+  let max = [];
+  for (let i = 0; i < numbers.length; i++){
+  if(numbers[i]>value){
+  max.push(numbers[i])
+  }
+}
+
+return max;
+  // Change code above this line
+}
+
+console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+
+function getCommonElements(array1, array2) {
+  // Change code below this line
+  let same = [];
+  for (let i = 0; i <= array1.length; i++){
+    console.log(array1[i]);
+if(array2.includes(array1[i])){
+same.push(array1[i])
+}
+}
+return same;
+
+ // Change code above this line
+}
+
+console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+
+
+function calculate(number) {
+ // Change code below this line
+  let sum = 0;
+for(let numbers of number){
+ sum = sum + numbers;
+}
+  
+return sum;
+
+  // Change code above this line
+}
+
+console.log(calculate([4, 3, 5]));
+
+function getEvenNumbers(start, end) {
+   // Change code below this line
+  let numbers = [];
+  for(let i = start; i<=end; i++){
+  if(i % 2 === 0){
+  numbers.push(i);
+  } 
+  }
+return numbers;
+
+    // Change code above this line
+}
+console.log(getEvenNumbers(3, 11));
+
+
+function includes(array, value) {
+  // Change code below this line
+  let number;
+for(let i = 0; i<array.length; i++){
+  if(array[i] === value){
+    number = true;
+    break;
+  } else {
+    number = false;
+  }
+}
+  return number;
+  // Change code above this line
+}
+console.log(includes([1, 2, 3, 4, 5], 3));
+console.log(includes(["apple", "plum", "pear", "orange"], "kiwi"));
+
+
+const apartment = {
+  imgUrl: "https://via.placeholder.com/640x480",
+  descr: "Spacious apartment in the city center",
+  rating: 4.7,
+  price: 5000,
+  tags: ["premium", "promoted", "top", "trusted"],
+  owner: {
+    name: "Henry Sibola",
+    phone: "982-126-1588",
+    email: "henry.carter@aptmail.com",
+  },
+};
+const totalData = {
+     
+}
+
+// Change code below this line
+const arrayData = "name";
+apartment.area = 60;
+apartment.rooms = 3;
+apartment.location = { country: "Jamaica", };
+apartment.data = ["ABC"];
+apartment[arrayData] = "Hello";
+//apartment.location.country =  "Jamaica";
+//apartment.location.city = "Kingston";
+
+console.log(apartment.location.country);
+console.log(apartment.data);
+console.log(apartment.name)
